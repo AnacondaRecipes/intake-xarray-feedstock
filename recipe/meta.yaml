@@ -49,7 +49,7 @@ about:
   summary: xarray plugins for Intake
   description:
     This package enables the set of data-loading methods from Xarray to be used within the Intake data access and cataloging system.
-  doc_url: https://intake-xarray.readthedocs.io/en/latest/
+  doc_url: https://intake-xarray.readthedocs.io/
   dev_url: https://github.com/intake/intake-xarray
 
 extra:
