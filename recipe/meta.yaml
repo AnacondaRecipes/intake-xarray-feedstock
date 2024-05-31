@@ -11,9 +11,9 @@ source:
 
 build:
   number: 0
-  # intake, zarr, namcodecs, and python-snappy currently aren't available on s390x
+  # zarr, netcd4, and numcodecs currently aren't available on s390x
   # xarray and zarr are available only for py>=3.8
-  skip: True  # [py<38]
+  skip: True  # [py<38 or s390x]
   script:
     - cp {{ RECIPE_DIR }}/versioneer.py {{ SRC_DIR }}/
     - {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv --no-build-isolation
