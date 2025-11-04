@@ -8,6 +8,9 @@ package:
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_')}}-{{ version }}.tar.gz
   sha256: 163ca7aa2206ab43468f962c8c3260a2ef1e4bea388ca3d42c427d9b6b3ce133
+  patches:
+    # Code uses configparser.SafeConfigParser() which was removed in Python 3.12+
+    - patches/0001-fix-py>311-configparser.patch  # [py>311]
 
 build:
   number: 0
