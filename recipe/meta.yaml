@@ -29,7 +29,7 @@ requirements:
     - zarr
     - dask >=2.2
     - netcdf4
-    - fsspec>2022
+    - fsspec >2022
     - msgpack-python
     - requests
 
